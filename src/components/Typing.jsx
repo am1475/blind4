@@ -21,8 +21,17 @@ function Typing() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900">
+    <div className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900">
+      {/* Admin Button placed at the top-right */}
+      <button
+        onClick={() => navigate('/admin')}
+        className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+      >
+        Admin
+      </button>
+      
       <h1 className="text-4xl text-white mb-8 font-bold">Blindfold Typing Challenge</h1>
+      
       {testStarted ? (
         <div className="w-full max-w-2xl px-4">
           <textarea
