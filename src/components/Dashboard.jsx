@@ -77,12 +77,6 @@ function Dashboard() {
           <p className="mb-4 text-lg">
             Time Taken: <span className="font-bold">{timeTaken} seconds</span>
           </p>
-          <button
-            onClick={handleViewResults}
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-          >
-            View Leaderboard
-          </button>
         </>
       ) : (
         <>
